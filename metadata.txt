@@ -1,0 +1,19 @@
+[general]
+name=Photos to GeoJSON
+qgisMinimumVersion=3.38
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=Import a folder of geotagged photos (EXIF GPS) as a time-enabled GeoJSON point layer.
+about=Scans a folder (optionally recursively) for images with EXIF GPS tags and writes one point per photo, keeping capture time, UTC time, altitude, direction and camera details, plus an optional track of line segments between consecutive photos (with duration, distance and speed). Both layers are set up for the Temporal Controller, and the photo is shown in the identify form. Uses QGIS's built-in EXIF reader, no extra dependencies.
+version=0.1.0
+author=mnmly
+email=i.am@mnmly.com
+repository=https://github.com/mnmly/qgis-photos-to-geojson
+tracker=https://github.com/mnmly/qgis-photos-to-geojson/issues
+homepage=https://github.com/mnmly/qgis-photos-to-geojson
+icon=icon.png
+category=Vector
+tags=exif,photo,geotag,geojson,temporal,timeseries
+experimental=True
+hasProcessingProvider=yes
+changelog=0.1.0 Initial release: photo points and time-animated track as GeoJSON.
