@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+  <pyqgis_plugin name="Photos to GeoJSON" version="0.1.1">
+    <description><![CDATA[Import a folder of geotagged photos (EXIF GPS) as a time-enabled GeoJSON point layer.]]></description>
+    <about><![CDATA[Scans a folder (optionally recursively) for images with EXIF GPS tags and writes one point per photo, keeping capture time, UTC time, altitude, direction and camera details, plus an optional track of line segments between consecutive photos (with duration, distance and speed). Both layers are set up for the Temporal Controller, and the photo is shown in the identify form. Uses QGIS's built-in EXIF reader, no extra dependencies.]]></about>
+    <version>0.1.1</version>
+    <qgis_minimum_version>3.38</qgis_minimum_version>
+    <qgis_maximum_version>4.99</qgis_maximum_version>
+    <homepage>https://github.com/mnmly/qgis-photos-to-geojson</homepage>
+    <file_name>photo_geojson.0.1.1.zip</file_name>
+    <icon>https://raw.githubusercontent.com/mnmly/qgis-photos-to-geojson/main/icon.png</icon>
+    <author_name>mnmly</author_name>
+    <download_url>https://github.com/mnmly/qgis-photos-to-geojson/releases/download/v0.1.1/photo_geojson-0.1.1.zip</download_url>
+    <experimental>False</experimental>
+    <tracker>https://github.com/mnmly/qgis-photos-to-geojson/issues</tracker>
+    <repository>https://github.com/mnmly/qgis-photos-to-geojson</repository>
+    <tags>exif,photo,geotag,geojson,temporal,timeseries</tags>
+    <category>Vector</category>
+  </pyqgis_plugin>
+</plugins>
