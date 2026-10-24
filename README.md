@@ -50,11 +50,20 @@ trace grows over time.
 
 ## Install
 
-- From this repository (recommended): in **Plugins → Manage and Install
-  Plugins → Settings**, click **Add…** and enter the URL
-  `https://raw.githubusercontent.com/mnmly/qgis-photos-to-geojson/main/plugins.xml`.
-  Then search for *Photos to GeoJSON* under **All** and click **Install**. QGIS
-  downloads the zip itself and notifies you of updates.
+### From this repository (recommended)
+
+1. **Plugins → Manage and Install Plugins → Settings**, then click **Add…**
+2. Enter any name and this URL, then click **OK**:
+   ```
+   https://raw.githubusercontent.com/mnmly/qgis-photos-to-geojson/main/plugins.xml
+   ```
+3. Go to **All**, search for *Photos to GeoJSON* and click **Install**.
+
+QGIS downloads the zip itself, so browser quirks don't matter, and it will
+notify you of new versions.
+
+### Other ways
+
 - From a release: download `photo_geojson-<version>.zip` and use
   **Install from ZIP**. In Safari, turn off *Open safe files after downloading*
   first: Safari unzips the file, and re-zipping it in Finder adds a `__MACOSX`
